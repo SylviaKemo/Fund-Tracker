@@ -1,0 +1,350 @@
+    .signup-page, .login-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .signup-form, .login-form {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .signup-form h3 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .input-box {
+      margin-bottom: 1.2rem;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .input-box input:focus {
+      outline: none;
+      border-color: #4a90e2;
+    }
+
+    .auth-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .auth-btn:hover {
+      background-color: #357abd;
+    }
+
+    .signup-form div h3, .login-form div h3 {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .signup-form div h3 a, .login-form div h3 a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .signup-form div h3 a:hover, .login-form div h3 a:hover {
+      text-decoration: underline;
+    }
+
+    .login-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .login-form {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-form h3 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .error-message {
+      background-color: #ffebee;
+      color: #d32f2f;
+      padding: 12px;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      border: 1px solid #ffcdd2;
+      text-align: center;
+    }
+
+    .error-message.success {
+      background-color: #e8f5e9;
+      color: #2e7d32;
+      border-color: #c8e6c9;
+    }
+      .password-requirements {
+        margin: 1rem 0;
+        padding: 1rem;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+      }
+
+      .password-requirements p {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: #495057;
+      }
+
+      .password-requirements ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .password-requirements li {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+        color: #6c757d;
+      }
+
+      .password-requirements li::before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+        border: 2px solid #dee2e6;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+      }
+
+      .password-requirements li.valid {
+        color: #357abd;
+      }
+
+      .password-requirements li.valid::before {
+        border-color: #357abd;
+        background-color: #357abd;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z'/%3E%3C/svg%3E");
+        background-size: 12px;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+    .forgot-password {
+      text-align: right;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .forgot-password a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .forgot-password a:hover {
+      color: #357abd;
+      text-decoration: underline;
+    }
+
+    .forgot-password-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f5f5f5;
+    }
+
+    .forgot-password-form {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .forgot-password-form h3 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .form-description {
+      text-align: center;
+      color: #666;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .success-message {
+      background-color: #e8f5e9;
+      color: #2e7d32;
+      padding: 12px;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      border: 1px solid #c8e6c9;
+      text-align: center;
+    }
+
+    .back-to-login {
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .back-to-login a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s ease;
+    }
+
+    .back-to-login a:hover {
+      color: #357abd;
+      text-decoration: underline;
+    }
+
+    .reset-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      padding: 20px;
+    }
+
+    .reset-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 450px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .reset-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .reset-header h2 {
+      color: #2d3748;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .reset-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .reset-description {
+      color: #718096;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .input-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #4a5568;
+      font-weight: 500;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      font-size: 1rem;
+      transition: border-color 0.2s ease;
+    }
+
+    .input-group input:focus {
+      outline: none;
+      border-color: #4299e1;
+    }
+
+    .reset-button {
+      width: 100%;
+      padding: 1rem;
+      background: #4299e1;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .reset-button:hover {
+      background: #3182ce;
+    }
+
+    .reset-footer {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-link {
+      color: #4299e1;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .back-link:hover {
+      color: #3182ce;
+    }
+
+    /* Dashboard.css */
+    .dashboard-container{
+    max-width: 1400px;
+    margin: 50px auto;
+    }
+
+
+   
+/* campaignform */

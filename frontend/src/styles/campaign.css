@@ -1,0 +1,67 @@
+
+.campaign-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+}
+
+.campaign-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+}
+
+.campaign-card:hover {
+  transform: translateY(-5px);
+}
+
+.campaign-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.campaign-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* 📝 Edit Button */
+.edit-btn {
+  color: #000;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.edit-btn:hover {
+  
+}
+
+/* 🗑 Delete Button */
+.delete-btn {
+  
+  color: #000;
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.delete-btn:hover {
+  
+}
+
+/* Increase button size */
+.edit-btn svg,
+.delete-btn svg {
+  font-size: 18px;
+}

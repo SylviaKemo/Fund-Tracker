@@ -1,0 +1,19 @@
+.navbar{
+    background-color: #eee;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.nav-link {
+  margin-right: 15px; /* Adjust as needed */
+}
+
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
