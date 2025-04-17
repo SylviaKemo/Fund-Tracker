@@ -9,6 +9,7 @@ const campaignRoutes = require("./routes/campaignRoute");
 const donationRoutes = require("./routes/donationRoute");
 
 const app = express();
+const port = process.env.PORT || 4000;
 
 app.use(express.json());
 
